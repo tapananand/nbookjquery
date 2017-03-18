@@ -1,0 +1,23 @@
+{
+  "name": "nbookjquery",
+  "version": "1.0.0",
+  "description": "A note taking app written in jQuery and Moustache",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tapananand/nbookjquery.git"
+  },
+  "keywords": [
+    "jQuery",
+    "Moustache"
+  ],
+  "author": "Tapan Anand",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tapananand/nbookjquery/issues"
+  },
+  "homepage": "https://github.com/tapananand/nbookjquery#readme"
+}
