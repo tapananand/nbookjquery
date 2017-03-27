@@ -1,0 +1,23 @@
+{
+    "extends": "eslint:recommended",
+    "rules": {
+        "semi": ["error", "always"],
+        "indent": ["error", "tab"]
+    },
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "impliesStrict": true,
+            "experimentalObjectRestSpread": true
+        }
+    },
+    "env": {
+        "browser": true,
+        "mocha": true,
+        "node": true
+    },
+    "globals": {
+        "expect": false
+    }
+}
