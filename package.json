@@ -43,11 +43,17 @@
     "karma-opera-launcher": "^1.0.0",
     "karma-safari-launcher": "^1.0.0",
     "karma-sinon": "^1.0.5",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.3",
     "mocha": "^3.2.0",
+    "mustache-loader": "^0.4.1",
     "sinon": "^2.1.0",
     "uglify": "^0.1.5",
     "uglifyjs-webpack-plugin": "^0.3.1",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.2"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
   }
 }

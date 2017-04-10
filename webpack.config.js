@@ -9,8 +9,8 @@ function isProd() {
 }
 
 let baseConfig = {
-    devtool: isProd() ? "source-map" : "eval-source-map" ,
-    entry: "./src/index.js",
+    devtool: "source-map",
+    entry: "./src/main.js",
     output: {
         path: path.resolve(__dirname, "build/", isProd() ? "prod" : "dev"),
         filename: isProd() ? "nbook.min.js" : "nbook.js"
@@ -34,6 +34,13 @@ let baseConfig = {
                 options: {
                     presets: ["env"]
                 } 
+            },
+            {
+                test: /\.mustache$/,
+                exclude: [
+                    "/node_modules"
+                ],
+                loader: "mustache-loader"
             }
         ]
     },
