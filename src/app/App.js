@@ -1,6 +1,7 @@
 import $ from "jquery";
 import Toolbar from "./toolbar/Toolbar";
 import Sidebar from "./sidebar/Sidebar";
+import ContentArea from "./contentArea/ContentArea";
 
 class App {
 	constructor() {
@@ -36,20 +37,10 @@ class App {
 
 	renderSideBar() {
 		this.sidebar = new Sidebar(this.container);
-		this.sidebar.addItem({
-			"content": "Note 1"
-		}, () => {
-			console.log("Note 1 clicked");
-		});
-		this.sidebar.addItem({
-			"content": "Note 2"
-		}, () => {
-			console.log("Note 2 clicked");
-		});
 	}
 
 	renderContentArea() {
-
+		this.contentArea = new ContentArea(this.container);
 	}
 }
 
